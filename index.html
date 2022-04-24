@@ -1,1 +1,35 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChromeWebMade</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <h1 id="greeting" class="hidden"></h1>
+    <h2 id="clock"></h2>
+
+    <form id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <form id="todo-form">
+      <input required type="text" placeholder="What a To Do and Press Enter" />
+    </form>
+    <ul id="todo-list">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </ul>
+    <script src="src/index.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/greeting.js"></script>
+    <script src="src/todo.js"></script>
+  </body>
+</html>
