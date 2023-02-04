@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ChromeWebMade</title>
+    <title>HelloToday</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock"></h2>
-
-    <form id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <form id="todo-form">
-      <input required type="text" placeholder="What a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list">
-      <div id="quote">
+    <div id="top">
+      <form id="login-form">
+        <input
+          id="loginName"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <button id="changeBtn">Log Out</button>
+    </div>
+    <div id="todayInfo">
+      <div id="todayWeather">
         <span></span>
         <span></span>
       </div>
-    </ul>
-    <script src="src/index.js"></script>
+      <div id="todayDate">
+        <h2 id="clock"></h2>
+      </div>
+    </div>
+    <div id="main">
+      <div id="calendar">
+        <!-- <div class="header">
+          <div class="year-month"></div>
+          <div class="nav">
+            <button class="nav-btn go-prev">&lt;</button>
+            <button class="nav-btn go-today">Today</button>
+            <button class="nav-btn go-next">&gt;</button>
+          </div>
+        </div> -->
+        <div class="calendarMain">
+          <div class="days">
+            <div class="daySun">일</div>
+            <div class="day">월</div>
+            <div class="day">화</div>
+            <div class="day">수</div>
+            <div class="day">목</div>
+            <div class="day">금</div>
+            <div class="daySat">토</div>
+          </div>
+          <div class="dates"></div>
+        </div>
+      </div>
+      <div id="todoList">
+        <form id="todo-form">
+          <input
+            required
+            type="text"
+            placeholder="What a To Do and Press Enter"
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <div id="breakTime"></div>
+
+    <!-- <script src="src/index.js"></script> -->
     <script src="src/clock.js"></script>
     <script src="src/greeting.js"></script>
     <script src="src/todo.js"></script>
+    <script src="src/calendar.js"></script>
+    <script src="src/weather.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@ function getClock() {
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
 
-  clock.innerText = `${year}년 ${month}월 ${ndate}일 ${day}요일 ${hour}:${minutes}:${seconds}`;
+  clock.innerText = `${year}년 ${month}월 ${ndate}일 (${day}) ${hour}:${minutes}:${seconds}`;
 }
 
 getClock();
